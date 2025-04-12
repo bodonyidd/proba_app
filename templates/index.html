@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI Példa</title>
+</head>
+<body>
+    <h1>Szia, {{ data.name }}!</h1>
+    <p>Korod: {{ data.age }}</p>
+    <h2>Hobbijaid:</h2>
+    <ul>
+        {% for hobby in data.hobbies %}
+            <li>{{ hobby }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
